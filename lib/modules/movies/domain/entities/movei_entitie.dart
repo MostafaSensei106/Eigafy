@@ -10,6 +10,7 @@ class MoveiEntitie extends Equatable {
     required this.voteAverage,
     required this.originalLanguage,
     required this.voteCount,
+    required this.releaseDate,
   });
 
   final int id;
@@ -20,6 +21,7 @@ class MoveiEntitie extends Equatable {
   final double voteAverage;
   final String originalLanguage;
   final int voteCount;
+  final String releaseDate;
 
   @override
   List<Object> get props => [
@@ -31,5 +33,6 @@ class MoveiEntitie extends Equatable {
     voteAverage,
     originalLanguage,
     voteCount,
+    releaseDate,
   ];
 }

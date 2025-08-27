@@ -1,6 +1,6 @@
-import '../entities/movei_entitie.dart';
+import '../entities/movei_entitie.dart' show MoveiEntitie;
 
-abstract class AbstractMovieRepository {
+abstract class BaseMovieRepository {
   Future<List<MoveiEntitie>> getNowPlayingMovies();
 
   Future<List<MoveiEntitie>> getPopularMovies();

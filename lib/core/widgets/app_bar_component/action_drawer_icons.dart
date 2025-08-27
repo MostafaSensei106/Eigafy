@@ -1,17 +1,21 @@
 import 'package:flutter/material.dart'
-    show Scaffold, Material, Colors, InkWell, Theme, Icons;
-import 'package:flutter/services.dart' show HapticFeedback;
-import 'package:flutter/widgets.dart'
     show
+        Scaffold,
+        Material,
+        Colors,
+        InkWell,
+        Theme,
+        Icons,
         StatelessWidget,
         BuildContext,
         Widget,
         EdgeInsets,
+        Icon,
         BorderRadius,
         Padding,
         BoxDecoration,
-        Container,
-        Icon;
+        Container;
+import 'package:flutter/services.dart' show HapticFeedback;
 import '../../config/constants/app_constants.dart' show AppConstants;
 
 class ActionDrawerIcon extends StatelessWidget {

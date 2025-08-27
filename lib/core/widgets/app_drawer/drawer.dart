@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart' show Drawer;
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart'
+    show StatelessWidget, BuildContext, Widget, EdgeInsets, ListView, Drawer;
 
 class AppDrawer extends StatelessWidget {
   const AppDrawer({super.key});

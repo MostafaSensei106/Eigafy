@@ -1,12 +1,12 @@
-import 'package:flutter/material.dart' show Theme;
-import 'package:flutter/widgets.dart'
+import 'package:flutter/material.dart'
     show
+        Theme,
         StatelessWidget,
-        BuildContext,
         Widget,
-        Container,
+        BuildContext,
+        BorderRadius,
         BoxDecoration,
-        BorderRadius;
+        Container;
 import '../../config/constants/app_constants.dart' show AppConstants;
 
 class AppContainerComponent extends StatelessWidget {

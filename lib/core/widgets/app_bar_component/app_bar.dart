@@ -1,6 +1,14 @@
-import 'package:flutter/material.dart' show kToolbarHeight, AppBar, Colors;
-import 'package:flutter/widgets.dart'
-    show Size, StatelessWidget, PreferredSizeWidget, BuildContext, Widget, Text;
+import 'package:flutter/material.dart'
+    show
+        kToolbarHeight,
+        AppBar,
+        Colors,
+        StatelessWidget,
+        PreferredSizeWidget,
+        Size,
+        BuildContext,
+        Widget,
+        Text;
 
 class ApAppBar extends StatelessWidget implements PreferredSizeWidget {
   const ApAppBar({required this.title, super.key});

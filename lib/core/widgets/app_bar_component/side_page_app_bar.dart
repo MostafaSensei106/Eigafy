@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart'
-    show kToolbarHeight, AppBar, Theme, Icons, IconButton, Localizations;
-import 'package:flutter/services.dart' show HapticFeedback;
-import 'package:flutter/widgets.dart'
     show
+        kToolbarHeight,
+        AppBar,
+        Theme,
+        Icons,
+        IconButton,
+        Localizations,
         StatelessWidget,
         PreferredSizeWidget,
+        Widget,
         Size,
         BuildContext,
-        Widget,
         IconData,
         EdgeInsets,
         Navigator,
@@ -15,7 +18,9 @@ import 'package:flutter/widgets.dart'
         BorderRadius,
         RoundedRectangleBorder,
         Icon;
-import '../../config/constants/app_constants.dart';
+import 'package:flutter/services.dart' show HapticFeedback;
+
+import '../../config/constants/app_constants.dart' show AppConstants;
 
 class SidePageAppBar extends StatelessWidget implements PreferredSizeWidget {
   const SidePageAppBar({

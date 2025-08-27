@@ -1,8 +1,15 @@
-import 'package:flutter/widgets.dart';
-import 'package:toastification/toastification.dart';
+import 'package:flutter/material.dart'
+    show Text, Alignment, EdgeInsets, BorderRadius, BorderSide;
+import 'package:toastification/toastification.dart'
+    show
+        toastification,
+        ToastificationStyle,
+        ToastCloseButton,
+        CloseButtonShowType,
+        ToastificationType;
 
-import '../../config/constants/app_constants.dart';
-import '../../routing/app_router.dart';
+import '../../config/constants/app_constants.dart' show AppConstants;
+import '../../routing/app_router.dart' show AppRouter;
 
 /// Shows a toast with the given [message] for a short duration at the bottom
 /// of the screen with a black background and white text.

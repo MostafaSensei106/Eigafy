@@ -1,13 +1,6 @@
-class MoveiEntitie {
-  final int id;
-  final String title;
-  final String backdropImagePath;
-  final List<int> genreIds;
-  final String overView;
-  final double voteAverage;
-  final String originalLanguage;
-  final int voteCount;
+import 'package:equatable/equatable.dart';
 
+class MoveiEntitie extends Equatable {
   const MoveiEntitie({
     required this.id,
     required this.title,
@@ -19,28 +12,24 @@ class MoveiEntitie {
     required this.voteCount,
   });
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is MoveiEntitie &&
-          runtimeType == other.runtimeType &&
-          id == other.id &&
-          title == other.title &&
-          backdropImagePath == other.backdropImagePath &&
-          genreIds == other.genreIds &&
-          overView == other.overView &&
-          voteAverage == other.voteAverage &&
-          originalLanguage == other.originalLanguage &&
-          voteCount == other.voteCount;
+  final int id;
+  final String title;
+  final String backdropImagePath;
+  final List<int> genreIds;
+  final String overView;
+  final double voteAverage;
+  final String originalLanguage;
+  final int voteCount;
 
   @override
-  int get hashCode =>
-      id.hashCode ^
-      title.hashCode ^
-      backdropImagePath.hashCode ^
-      genreIds.hashCode ^
-      overView.hashCode ^
-      voteAverage.hashCode ^
-      originalLanguage.hashCode ^
-      voteCount.hashCode;
+  List<Object> get props => [
+    id,
+    title,
+    backdropImagePath,
+    genreIds,
+    overView,
+    voteAverage,
+    originalLanguage,
+    voteCount,
+  ];
 }

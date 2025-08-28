@@ -1,6 +1,13 @@
-import 'package:flutter/material.dart' show IconButton;
-import 'package:flutter/services.dart';
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart'
+    show
+        StatelessWidget,
+        VoidCallback,
+        IconData,
+        BuildContext,
+        Widget,
+        Icon,
+        IconButton;
+import 'package:flutter/services.dart' show HapticFeedback;
 
 class IconButtonComponent extends StatelessWidget {
   const IconButtonComponent({

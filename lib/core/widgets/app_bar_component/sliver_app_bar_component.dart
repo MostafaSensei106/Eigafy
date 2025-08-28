@@ -1,7 +1,23 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:flutter/material.dart'
+    show
+        StatelessWidget,
+        Widget,
+        PreferredSizeWidget,
+        BuildContext,
+        IconData,
+        EdgeInsets,
+        Navigator,
+        Localizations,
+        Theme,
+        Icons,
+        SliverAppBar,
+        IconButton,
+        BorderRadius,
+        RoundedRectangleBorder,
+        Icon;
+import 'package:flutter/services.dart' show HapticFeedback;
 
-import '../../config/constants/app_constants.dart';
+import '../../config/constants/app_constants.dart' show AppConstants;
 
 class SliverAppBarComponent extends StatelessWidget {
   const SliverAppBarComponent({
